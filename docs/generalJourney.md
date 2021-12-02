@@ -30,5 +30,7 @@
 ## Historias de usuarios
 
 -[HU01](https://github.com/xCyal/A-Tracker/issues/3) Usuario casual - Encontrar mis errores
+
 -[HU02](https://github.com/xCyal/A-Tracker/issues/4) Usuario avanzado - Analizar rival
+
 -[HU03](https://github.com/xCyal/A-Tracker/issues/5) Profesional - Añadir guía
