@@ -21,3 +21,8 @@
 
 - Todo profesional adjunto accede a la plataforma con la posibilidad de añadir o corregir los diferentes consejos o guías suministradas por la plataforma. En ocasiones será el propio profesional el encargado de la creación de dichas guías, añadiendolas al sistema para mostrarlas posteriormente a los usuarios que tengan el perfil necesario para necesitarlas.
 
+## Milestones
+
+- [M0](https://github.com/xCyal/A-Tracker/milestone/1) Creación clase Usuario.
+- [M1](https://github.com/xCyal/A-Tracker/milestone/2) Creación clase Tablero.
+- [M3](https://github.com/xCyal/A-Tracker/milestone/3) Creación clase Partida. 
