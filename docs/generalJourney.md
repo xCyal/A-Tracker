@@ -26,3 +26,9 @@
 - [M0](https://github.com/xCyal/A-Tracker/milestone/1) Creación clase Usuario.
 - [M1](https://github.com/xCyal/A-Tracker/milestone/2) Creación clase Tablero.
 - [M3](https://github.com/xCyal/A-Tracker/milestone/3) Creación clase Partida. 
+
+## Historias de usuarios
+
+-[HU01](https://github.com/xCyal/A-Tracker/issues/3) Usuario casual - Encontrar mis errores
+-[HU02](https://github.com/xCyal/A-Tracker/issues/4) Usuario avanzado - Analizar rival
+-[HU03](https://github.com/xCyal/A-Tracker/issues/5) Profesional - Añadir guía
