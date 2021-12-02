@@ -21,4 +21,4 @@ De esta forma A-Tracker sera una buena opción para personas que deseen dedicarl
 
 Puedes encontrar más información sobre el proyecto en /docs.
 
-## - [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-1/docs/generalJourney.md)
+- [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-1/docs/generalJourney.md)
