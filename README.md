@@ -16,3 +16,9 @@ A-Tracker se creará con la intención de proporcionar al usuario una herramient
 De esta forma A-Tracker sera una buena opción para personas que deseen dedicarle un tiempo limitado a mejorar, así como para personas que tengan un conocimiento alto y necesiten un buen soporte que realize un analisis sobre el propio usuario o sus rivales.
 
 
+
+# Documentación del proyecto
+
+Puedes encontrar más información sobre el proyecto en /docs.
+
+## - [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-1/docs/generalJourney.md)
