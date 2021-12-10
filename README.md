@@ -19,6 +19,6 @@ De esta forma A-Tracker sera una buena opción para personas que deseen dedicarl
 
 # Documentación del proyecto
 
-Puedes encontrar más información sobre el proyecto en /docs.
+Puedes encontrar más información sobre el proyecto en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-1/docs).
 
 - [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-1/docs/generalJourney.md)
