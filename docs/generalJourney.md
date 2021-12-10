@@ -23,9 +23,9 @@
 
 ## Milestones
 
-- [M0](https://github.com/xCyal/A-Tracker/milestone/1) Creación clase Usuario.
-- [M1](https://github.com/xCyal/A-Tracker/milestone/2) Creación clase Tablero.
-- [M3](https://github.com/xCyal/A-Tracker/milestone/3) Creación clase Partida. 
+- [M0](https://github.com/xCyal/A-Tracker/milestone/1) Sistema de almacenamiento y administración de usuarios.
+- [M1](https://github.com/xCyal/A-Tracker/milestone/2) Sistema de almacenamiento y gestión de partidas
+- [M2](https://github.com/xCyal/A-Tracker/milestone/3) Sistema de análisis de datos de partidas
 
 ## Historias de usuarios
 
