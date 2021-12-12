@@ -23,9 +23,9 @@
 
 ## Milestones
 
-- [M0](https://github.com/xCyal/A-Tracker/milestone/3) Sistema de almacenamiento y gestión de partidas
-- [M1](https://github.com/xCyal/A-Tracker/milestone/1) Sistema de almacenamiento y administración de usuarios
-- [M2](https://github.com/xCyal/A-Tracker/milestone/2) Sistema de análisis de datos de partidas
+- [M0](https://github.com/xCyal/A-Tracker/milestone/1) Módulo de seguimiento de partida
+- [M1](https://github.com/xCyal/A-Tracker/milestone/2) Módulo de registro de usuarios
+- [M2](https://github.com/xCyal/A-Tracker/milestone/3) Módulo estadístico de partidas
 
 ## Historias de usuarios
 
