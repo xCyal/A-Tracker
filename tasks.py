@@ -1,7 +1,7 @@
 from invoke import task,run
 
 @task
-def checkSyntax(c):
+def check(c):
    '''
    Task encargada de comprobar la sintaxis de la aplicación
    '''
