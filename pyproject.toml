@@ -6,6 +6,8 @@ authors = ["xCyal <manuvilla4@correo.ugr.es>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+invoke = "^1.6.0"
+pylint = "^2.11.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
