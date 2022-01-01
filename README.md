@@ -29,4 +29,21 @@ Puedes encontrar los criterios considerados en la elección de poetry e invoke e
 
 - [criteriosObjetivo3.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-3/docs/criteriosObjetivo3.md)
 
+### Instalación
+
+Para instalar poetry:
+
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+### Setup del repositorio
+
+Primero es necesario hacer clone, una vez tenemos nuestro repositorio local debemos usar las siguientes ordenes:
+
+####poetry install 
+
+Se encarga de instalar las dependencias
+
+####poetry run inv check
+
+Desde poetry usamos la orden check asociada a las tasks de invoke, para comprobar que todo esta en orden
 
