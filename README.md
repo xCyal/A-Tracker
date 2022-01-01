@@ -18,7 +18,15 @@ De esta forma A-Tracker sera una buena opción para personas que deseen dedicarl
 
 
 # Documentación del proyecto
-
-Puedes encontrar más información sobre el proyecto en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-1/docs).
+## Objetivo 1 - 2
+Puedes encontrar más información sobre el proyecto en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-3/docs).
 
 - [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-1/docs/generalJourney.md)
+
+
+## Objetivo 3
+Puedes encontrar los criterios considerados en la elección de poetry e invoke en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-3/docs)
+
+- [criteriosObjetivo3.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-3/docs/criteriosObjetivo3.md)
+
+
