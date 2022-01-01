@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "Tracker"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Aplicacion enfocada al aprendizaje en juegos como el ajedrez, así como la como en la detección de errores en el juego  propio o de los rivales."
+authors = ["xCyal <manuvilla4@correo.ugr.es>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
