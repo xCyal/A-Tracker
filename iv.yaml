@@ -1,2 +1,8 @@
 lenguaje: python
 entidad: Tracker/partidaChess.py
+
+automatizar:
+   fichero: tasks.py
+   orden: inv
+   
+test: test/test_tracker.py
