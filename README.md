@@ -39,11 +39,11 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 Primero es necesario hacer clone, una vez tenemos nuestro repositorio local debemos usar las siguientes ordenes:
 
-####poetry install 
+**poetry install**
 
 Se encarga de instalar las dependencias
 
-####poetry run inv check
+**poetry run inv check**
 
 Desde poetry usamos la orden check asociada a las tasks de invoke, para comprobar que todo esta en orden
 
