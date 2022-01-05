@@ -1,8 +1,10 @@
 # Criterios de uso de poetry como gestor de dependencias
 
-Se ha elegido Poetry frente a pip tras algo de investigación debido a que su eficiencia respecto a este último es mayor, dando una mejor performance. Además, es mucho más sencillo en su instalación y manejo, permitiendonos manejarle casi completamente desde un solo archivo "pyproject.toml" 
+Se ha elegido Poetry frente a otros como pip, pipenv o npm.
 
-La documentación de Poetry es bastante clara y amigable para usuarios poco experimentados en su uso, otro de los motivos de peso para su elección. 
+La documentación de Poetry es bastante clara y amigable para usuarios poco experimentados en su uso. Poetry nos permite su completo manejor desde un único archivo llamado pyproject.toml, cuya sintaxis es fácil de entender y manejar. Además los tiempos que toma son bastante menores que los anteriores a la hora de resolver las dependencias, cosa que en un entorno como el de nuestro proyecto, de pequeño tamaño, puede no ser notable, pero en caso de tener una gran de dependencias puede significar una ganancia significativa de tiempo.
+
+En general poetry ha resultado a mi parecer una mejor opción, basandome no solo en los datos encontrados si no tambien en opiniones y críticas de usuarios que actualmente estan desarrollando proyectos en python de una escala mayor, que concuerdan con la facilidad de uso y ventajas de dicha herramienta.
 
 # Criterios de uso de Invoke como Task runner
 
