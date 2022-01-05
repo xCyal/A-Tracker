@@ -8,3 +8,10 @@ def check(c):
    print("Comprobacion de sintaxis")
    run("pylint -E tracker")
 
+@task
+def tests(c):
+   '''
+   Task encargada de realizar los tests 
+   '''
+   print("Realizando tests")
+   run("pytest")
