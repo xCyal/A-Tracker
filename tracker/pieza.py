@@ -1,6 +1,9 @@
 from enum import Enum
 
 class Pieza(Enum):
+  '''
+     Enumerado encargado de indicar el nombre de cada pieza o posicion vacía en un tablero
+  '''
   REY_BLANCO = 1
   REY_NEGRO = 2
   REINA_BLANCO = 3
@@ -13,3 +16,4 @@ class Pieza(Enum):
   CABALLO_NEGRO = 10
   PEON_BLANCO = 11 
   PEON_NEGRO = 12
+  EMPTY = 13
