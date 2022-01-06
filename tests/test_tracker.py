@@ -1,4 +1,4 @@
-from tracker import __version__
+from tracker.partidachess import *
 
 
 def test_version():
