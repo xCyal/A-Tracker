@@ -19,13 +19,13 @@ De esta forma A-Tracker sera una buena opción para personas que deseen dedicarl
 
 # Documentación del proyecto
 ## Objetivo 1 - 2
-Puedes encontrar más información sobre el proyecto en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-3/docs).
+Puedes encontrar más información sobre el proyecto en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-4/docs).
 
-- [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-1/docs/generalJourney.md)
+- [generalJourney.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-4/docs/generalJourney.md)
 
 
 ## Objetivo 3
-Puedes encontrar los criterios considerados en la elección de poetry e invoke en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-3/docs)
+Puedes encontrar los criterios considerados en la elección de poetry e invoke en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-4/docs)
 
 - [criteriosObjetivo3.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-3/docs/criteriosObjetivo3.md)
 
@@ -47,3 +47,13 @@ Se encarga de instalar las dependencias
 
 Desde poetry usamos la orden check asociada a las tasks de invoke, para comprobar que todo esta en orden
 
+
+## Objetivo 4
+Puedes encontrar los criterios considerados en la elección de Pytest y assertpy en [/docs](https://github.com/xCyal/A-Tracker/tree/Objetivo-4/docs)
+
+- [criteriosObjetivo4.md](https://github.com/xCyal/A-Tracker/blob/Objetivo-4/docs/criteriosObjetivo4.md)
+
+**Para correr los tests**
+Es necesario lanzar la orden pytest desde poetry desde el directorio de tests:
+
+poetry run pytest
