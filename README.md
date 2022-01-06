@@ -56,4 +56,4 @@ Puedes encontrar los criterios considerados en la elección de Pytest y assertpy
 **Para correr los tests**
 Es necesario lanzar la orden pytest desde poetry desde el directorio de tests:
 
-poetry run pytest
+poetry inv test
