@@ -5,4 +5,4 @@ automatizar:
    fichero: tasks.py
    orden: inv
    
-test: test/test_tracker.py
+test: test/test_tablero.py
