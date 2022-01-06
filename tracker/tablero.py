@@ -1,3 +1,5 @@
+from pieza import *
+
 class Tablero:
     '''
     Clase tablero, encargada de almacenar una posicion unica de las piezas en un tablero de ajedrez
@@ -16,14 +18,14 @@ class Tablero:
         '''
         Constructor de la clase tablero, inicializa el tablero solo si hay 64 casillas, en caso contrario lo 
         deja vacío.
-    
+        
         Atributos
         ---------
         posicion_tablero : list[pieza]
              Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene.
 
         '''
-        if len(posicion_tablero) == MAX_PIEZAS:
+        if len(posicion_tablero) == Tablero.MAX_PIEZAS:
             self._posicion = posicion_tablero
         else:
             self._posicion = []
@@ -40,24 +42,24 @@ class Tablero:
         puntuacion = 0
         
         for i in self._posicion:
-            if i == pieza.PEON_BLANCO:
+            if i == Pieza.PEON_BLANCO:
                 puntuacion += 1
-            elif i == pieza.PEON_NEGRO:
+            elif i == Pieza.PEON_NEGRO:
                 puntuacion -= 1
-            elif i == pieza.ALFIL_BLANCO:
+            elif i == Pieza.ALFIL_BLANCO:
                 puntuacion += 3
-            elif i == pieza.ALFIL_NEGRO:
+            elif i == Pieza.ALFIL_NEGRO:
                 puntuacion -= 3
-            elif i == pieza.CABALLO_BLANCO:
+            elif i == Pieza.CABALLO_BLANCO:
                 puntuacion += 3
-            elif i == pieza.CABALLO_NEGRO:
+            elif i == Pieza.CABALLO_NEGRO:
                 puntuacion -= 3
-            elif i == pieza.TORRE_BLANCO:
+            elif i == Pieza.TORRE_BLANCO:
                 puntuacion += 5
-            elif i == pieza.TORRE_NEGRO:
+            elif i == Pieza.TORRE_NEGRO:
                 puntuacion -= 5
-            elif i == pieza.REINA_BLANCO:
+            elif i == Pieza.REINA_BLANCO:
                 puntuacion += 9
-            elif i == pieza.REINA_NEGRO:
+            elif i == Pieza.REINA_NEGRO:
                 puntuacion -= 9
         return puntuacion

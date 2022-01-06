@@ -1,7 +1,6 @@
 from tablero import *
 
 class PartidaChess:
-   
    '''
    Clase encargada de almacenar los datos de una partida de ajedrez
         
@@ -18,8 +17,8 @@ class PartidaChess:
     	Lista de tableros (movimientos) de los jugadores durante la partida
    '''
 
-    def __init__(self, nombre_blancas,nombre_negras,ganador,movimientos):
-        
+   def __init__(self,nombre_blancas,nombre_negras,ganador,movimientos):
+       
         '''
     	Construye un objeto de tipo PartidaChess
     	
@@ -40,17 +39,14 @@ class PartidaChess:
         self._ganador = ganador
         self._movimientos_partida = movimientos
 
-    def get_nombre_blancas(self):
-        return self._nombre_blancas
+   def get_nombre_blancas(self):
+       return self._nombre_blancas
     
-    def get_nombre_negras(self):
-        return self._nombre_negras
-    
-    def get_jugador_inicial(self):
-        return self._jugador_inicial
+   def get_nombre_negras(self):
+       return self._nombre_negras
 
-    def get_ganador(self):
-        return self._ganador
+   def get_ganador(self):
+       return self._ganador
 
-    def get_movimientos_partida(self):
-        return self._movimientos_partida
+   def get_movimientos_partida(self):
+       return self._movimientos_partida
