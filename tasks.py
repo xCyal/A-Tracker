@@ -9,7 +9,7 @@ def check(c):
    run("pylint -E tracker")
 
 @task
-def tests(c):
+def test(c):
    '''
    Task encargada de realizar los tests 
    '''
