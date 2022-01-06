@@ -1,6 +1,10 @@
 # Criterios de uso de poetry como gestor de dependencias
 
-Se ha elegido Poetry frente a otros como pip, pipenv o npm.
+Se ha elegido Poetry frente a otros como pip o pipenv.
+
+He utilizado pip en otras ocasiones, y me he decantado por utilizar poetry por su facilidad a la hora de administrarlo, ya que requiere algo más de tiempo para su correcta configuración y uso.
+
+Respecto a pipenv, nunca lo he utilizado personalmente, pero parece ser una buena alternativa a poetry y bastante aceptada en la comunidad de python, quizas siendo su documentación algo menos clara que la de poetry para mi gusto personal.
 
 La documentación de Poetry es bastante clara y amigable para usuarios poco experimentados en su uso. Poetry nos permite su completo manejor desde un único archivo llamado pyproject.toml, cuya sintaxis es fácil de entender y manejar.
 
