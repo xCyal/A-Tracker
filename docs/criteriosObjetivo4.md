@@ -1,4 +1,4 @@
-#Principios F.I.R.S.T de pruebas unitarias
+# Principios F.I.R.S.T de pruebas unitarias
 
  - Fast
  - Isolated/Independent
@@ -12,11 +12,11 @@ El developer debe de encargarse de que estos tests sean rápidos, para poder uti
 
 Los tests deben de intentar enfocarse en probar todas las posibles entradas invalidas o posibles argumentos ilegales, así, como en caso de tener apliaciones mas complejas que la desarrollada en este proyecto, intentar testear que ocurriria con un input demasiado grande. En resumen, intentar predecir todos los escenarios posibles en los que una función o parte del código puede dar algún error, de esta forma detectando los posibles errores a la hora de implementar nuevo código.
 
-#Test framework
+# Test framework
 
 Se ha seleccionado Pytest sobre su principal competidor en python Unittest. Ambas son buenas opciones, ampliamente utilizadas en la comunidad de python, pero he optado por el uso del primero, pytest, por su, en mi opinion, mayor simplicidad. En general Pytest y Unittest son muy similares, ambas permiten el uso de bibliotecas de aserciones como la utilizada en este proyecto (assertpy) y tienen las mismas funcionalidades, pero en mi opinión al utilizar ambas, la salida de Pytest es más de mi agrado y facil de comprender. He de mencionar que he tenido ciertos problemas a la hora de configurar los directorios con Pytest que no he tenido con Unittest, pero la documentación de Pytest ha resultado útil en este caso.
 
-#Assertions library
+# Assertions library
 
 Se ha utilizado assertpy como biblioteca de aserciones frente a otras opciones como Grappa.
 
