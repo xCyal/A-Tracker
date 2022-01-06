@@ -42,24 +42,34 @@ class Tablero:
         puntuacion = 0
         
         for i in self._posicion:
-            if i == Pieza.PEON_BLANCO:
+            if i.value == Pieza.PEON_BLANCO.value:
+                print("Peon blanco")
                 puntuacion += 1
-            elif i == Pieza.PEON_NEGRO:
+            elif i.value == Pieza.PEON_NEGRO.value:
+                print("Peon negro")
                 puntuacion -= 1
-            elif i == Pieza.ALFIL_BLANCO:
+            elif i.value == Pieza.ALFIL_BLANCO.value:
+                print("Alfil")
                 puntuacion += 3
-            elif i == Pieza.ALFIL_NEGRO:
+            elif i.value == Pieza.ALFIL_NEGRO.value:
+                print("Alfil")
                 puntuacion -= 3
-            elif i == Pieza.CABALLO_BLANCO:
+            elif i.value == Pieza.CABALLO_BLANCO.value:
+                print("Caballo blanco")
                 puntuacion += 3
-            elif i == Pieza.CABALLO_NEGRO:
+            elif i.value == Pieza.CABALLO_NEGRO.value:
+                print("Caballo negro")
                 puntuacion -= 3
-            elif i == Pieza.TORRE_BLANCO:
+            elif i.value == Pieza.TORRE_BLANCO.value:
+                print("Torre blanca")
                 puntuacion += 5
-            elif i == Pieza.TORRE_NEGRO:
+            elif i.value == Pieza.TORRE_NEGRO.value:
+                print("Torre negra")
                 puntuacion -= 5
-            elif i == Pieza.REINA_BLANCO:
+            elif i.value == Pieza.REINA_BLANCO.value:
+                print("Reina blanca")
                 puntuacion += 9
-            elif i == Pieza.REINA_NEGRO:
+            elif i.value == Pieza.REINA_NEGRO.value:
+                print("Reina negra")
                 puntuacion -= 9
         return puntuacion
