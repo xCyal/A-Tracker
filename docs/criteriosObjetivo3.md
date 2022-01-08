@@ -1,6 +1,6 @@
-# Criterios de uso de poetry como gestor de dependencias
+# Poetry como gestor de dependencias
 
-Se ha elegido Poetry frente a otros como pip o pipenv.
+Se ha elegido Poetry como gestor de dependencias para este proyecto frente a otros como pip o pipenv.
 
 He utilizado pip en otras ocasiones, y me he decantado por utilizar poetry por su facilidad a la hora de administrarlo, ya que requiere algo más de tiempo para su correcta configuración y uso.
 
