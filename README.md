@@ -33,7 +33,7 @@ Puedes encontrar los criterios considerados en la elección de poetry e invoke e
 
 Para instalar poetry:
 
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+[Documentación de poetry](https://python-poetry.org/docs/)
 
 ### Setup del repositorio
 
