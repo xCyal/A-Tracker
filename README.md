@@ -43,7 +43,7 @@ Primero es necesario hacer clone, una vez tenemos nuestro repositorio local debe
 
 Se encarga de instalar las dependencias
 
-**poetry run inv check**
+**inv check**
 
-Desde poetry usamos la orden check asociada a las tasks de invoke, para comprobar que todo esta en orden
+Desde invoke llamamos a la funcion check de tasks, para comprobar que todo esta en orden
 
