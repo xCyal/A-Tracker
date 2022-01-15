@@ -22,3 +22,8 @@ De esta forma A-Tracker sera una buena opción para personas que deseen dedicarl
 Puedes encontrar más información sobre el proyecto en [/docs](/docs).
 
 - [generalJourney.md](/docs/generalJourney.md)
+
+# Documentación Objetivo 2
+
+Puedes encontrar más información del objetivo 2 en la [documentacion asociada](/docs/Objetivo-2.md)
+
