@@ -19,7 +19,7 @@ class Tablero:
         
         Atributos
         ---------
-        _posiciones: list[pieza]
+        posicion_tablero: list[pieza]
              Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene.
         '''
         if len(posicion_tablero) == Tablero.MAX_PIEZAS:
