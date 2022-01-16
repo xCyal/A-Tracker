@@ -4,7 +4,7 @@ class Tablero:
     
     Atributos
     ---------
-    _posicion : list[pieza]
+    _posiciones : list[pieza]
         Variable que almacena hasta MAX_PIEZAS piezas que representan el tablero en una situación concreta
     MAX_PIEZAS : int
     	Variable de clase que indica el maximo de piezas que puede almacenar un tablero.
@@ -19,13 +19,13 @@ class Tablero:
         
         Atributos
         ---------
-        posicion_tablero : list[pieza]
+        _posiciones: list[pieza]
              Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene.
         '''
         if len(posicion_tablero) == Tablero.MAX_PIEZAS:
             self._posicion = posicion_tablero
         else:
-            self._posicion = []
+            self._posiciones = []
             
     @property
     def posicion(self):
