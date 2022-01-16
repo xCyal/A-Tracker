@@ -27,13 +27,6 @@ class Tablero:
         else:
             self._posiciones = []
             
-    @property
-    def posicion(self):
-        """
-        Property de posicion (Getter)
-        """
-        print("Get de _posicion")
-        return self._posicion
 
 
         
