@@ -1,3 +1,5 @@
+from pieza import *
+
 class Tablero:
     '''
     Clase tablero, encargada de almacenar una posicion unica de las piezas en un tablero de ajedrez
@@ -22,10 +24,16 @@ class Tablero:
         posicion_tablero: list[pieza]
              Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene.
         '''
-        if len(posicion_tablero) == Tablero.MAX_PIEZAS:
-            self._posicion = posicion_tablero
-        else:
-            self._posiciones = []
+        if  len(posicion_tablero) != Tablero.MAX_PIEZAS:
+            raise ValueError("El tamaño del tablero debe ser exactamente 64 casillas")
+        
+        for i in posicion_tablero:
+            if not isinstance(i,pieza):
+                raise ValueError("Los valores introducidos deben ser del tipo pieza")
+        
+        self._posiciones = posicion_tablero
+        
+        
             
 
 
