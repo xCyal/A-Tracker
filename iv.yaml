@@ -3,4 +3,4 @@ entidad: tracker/tablero.py
 
 automatizar:
    fichero: tasks.py
-   orden: inv check
+   orden: inv
