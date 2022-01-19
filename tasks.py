@@ -1,0 +1,24 @@
+'''
+
+Archivo de tareas del proyecto A-Tracker
+
+Es necesario invoke: 'pip install invoke'
+
+Modo de uso: 'inv <tarea>'
+
+'''
+
+from invoke import task,run
+
+@task
+def check(c):
+    '''
+    
+    Task encargada de comprobar la correcta sintaxis del código
+   
+    Comprueba que el código es correcto, no errores lógicos o del estilo de dicho código.
+    
+    '''
+    
+    print("Comprobando sintaxis")
+    run("python -m py_compile tracker/*.py")
