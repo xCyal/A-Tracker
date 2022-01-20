@@ -31,9 +31,9 @@ Puedes encontrar más información del objetivo 2 en la [documentacion asociada]
 
 Puedes encontrar más información del objetivo 3 en la [documentación asociada](/docs/Objetivo-3.md)
 
-Para el correcto funcionamiento de este objetivo debes de tener instaladas las dependencias (Invoke), para ello utiliza el comando:
+Para el correcto funcionamiento de este objetivo debes de tener instaladas las dependencias, para ello utilizamos el gestor de dependencias (Poetry) desde el directorio del proyecto:
 
-- 'pip install -r requirements.txt'
+- 'poetry install'
 
 Una vez se ha instalado las dependencias podemos proceder a utilizar el siguiente comando para checkear la sintaxis de los archivos .py de nuestro proyecto:
 
