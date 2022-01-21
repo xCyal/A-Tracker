@@ -1,10 +1,19 @@
 # Elección de task runner:
 ## Invoke
 
-Invoke es un task runner en python que nos permite definir y ejecutar tareas sobre nuestro proyecto. Se puede invocar las funciones de las tareas de manera muy similar a make (inv <funcion>) por lo que es bastante cómodo para usuarios acostumbrados a este último. Además su documentación es bastante completa y sencilla, por lo que se vuelve fácil trabajar con invoke. 
+Invoke es un "task execution tool & library", es decir, un software escrito en python que nos permite automatizar tareas sobre nuestros proyectos. Para ello utiliza un archivo llamado tasks.py sobre el cual se escriben las funciones deseadas (en el caso de este proyecto la función check, encargada de comprobar que el código de tracker compila), para más tarde poder invocar dichas funciones mediante el comando : - inv -funcion-
 
-La elección de invoke como task runner se ha tomado en base a lo mencionado previamente, especialmente por su parecido con make a la vez que nos permite definir las funciones al estilo de python.
+La razón del uso de invoke en nuestro proyecto viene dada por los siguientes motivos:
 
+- Se trata de un Task runner específico para python. Esto significa que las funciones se escriben en un **estilo python**.
+
+- La documentación es amigable y extensa. Para usuarios poco familiarizados con el uso de Task runners, una buena [documentación](https://www.pyinvoke.org/) es esencial para comprender correctamente como usar dicho software, por lo que es un punto muy a su favor.
+
+- Casi todos los desarrolladores (como en mi caso) están familiarizados con el uso de make, el cual puede ser utilizado como task runner genérico. Invoke tiene una forma de uso muy similar a este, con la ventaja de ser específico para el lenguaje del proyecto (python) a la hora de escribir sus funciones, lo que me hace decantarme por su uso sin sentir que estoy utilizando una herramienta completamente desconocida.
+
+- Invoke, es una recomendación generalizada dentro de la comunidad de python en lo que a Task runners se refiere. Se podría haber utilizado el propio Poetry, que ya se incluye en el proyecto, como Task runner, pero el uso de este último esta más enfocado a la gestión de dependencias y paquetes.
+
+En general, es una opción de uso sencillo y que se adapta a las necesidades de este proyecto.
   
 # Gestión de dependencias
   
