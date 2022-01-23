@@ -21,23 +21,23 @@ La razón del uso de invoke en nuestro proyecto viene dada por los siguientes mo
 
 ### Algunas características de otros task runners que he revisado para realizar la elección: 
 
-- Make: Puede servir como Task runner, aunque su principal uso no es como tal, puede ser una buena opción:
+- [Make](https://www.gnu.org/software/make/manual/make.html) (Puede servir como Task runner, aunque su principal uso no es como tal, puede ser una buena opción):
   - Manejo desde un solo archivo Makefile.
   - No es específico de python. *
   - Sintaxis sencilla.
 
-- Doit:
+- [Doit](https://pydoit.org/contents.html):
   - Específico para python
   - Incluye dependencias externas *
   - Configuración en un fichero 
 
-- Poethepoet:
+- [Poethepoet](https://github.com/nat-n/poethepoet):
   - Específico para python
   - Incluye dependencias externas *
   - Configuración algo más complicada que el resto *
   - Configuración en pyproject.toml 
 
-Estos son los más extendidos a parte de invoke, he de mencionar que he encontrado otros como Pypyr o Taskipy, los cuales no parecen tener carácteristicas novedosas respecto a los anteriores además de encontrar bastante menos documentación sobre ellos.
+Estos son los más extendidos a parte de invoke, he de mencionar que he encontrado otros como [Pypyr](https://pypyr.io/docs/) o [Taskipy](https://github.com/illBeRoy/taskipy), los cuales no parecen tener carácteristicas novedosas respecto a los anteriores además de encontrar bastante menos documentación sobre ellos.
 
 Respecto a los aquí mencionados, la elección de invoke viene principalmente por los puntos marcados, o bien tienen dependencias externas, no son específicos para python, o su configuración puede no ser tan sencilla como en Invoke e incluso en casos como Taskipy o Poethepoet depender directamente de pyproject.toml. Además las comunidades que respaldan a estos Task runners son considerablemente menores y su uso mucho menos extendido que el de Invoke.
 
