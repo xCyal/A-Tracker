@@ -33,7 +33,15 @@ class Tablero:
         
         self._posiciones = posicion_tablero
         
+    @property
+    def posiciones(self):
+        '''
+        Getter del atributo _posiciones de la clase tablero
         
+        Devuelve _posiciones
+        '''
+        print("Getter de _posiciones en tablero.py")
+        return self._posiciones       
             
 
 
