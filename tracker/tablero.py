@@ -45,5 +45,42 @@ class Tablero:
             
 
 
+    def puntuacion_tablero(self):
+        '''
+        Metodo que devuelve la puntuacion, a nivel de material, del tablero.
         
+        En caso de empate material puntuacion = 0, en caso de mayoria blanca puntuacion positiva, en caso de victoria negra puntuacion
+        negativa.
+        
+        La puntuacion de las piezas:
+        Peon = +-1
+        Alfil / Caballo = +-3
+        Torre = +-5
+        Reina = +-9 
+        '''
+        puntuacion = 0
+        
+        for i in self_posiciones:
+            if i.value == Pieza.PEON_BLANCO.value:
+                puntuacion +=1
+            elif i.value == Pieza.PEON_NEGRO.value:
+                puntuacion -=1
+            elif i.value == Pieza.ALFIL_BLANCO.value:
+                puntuacion +=3
+            elif i.value == Pieza.ALFIL_NEGRO.value:
+                puntuacion -=3
+            elif i.value == Pieza.CABALLO_BLANCO.value:
+                puntuacion +=3
+            elif i.value == Pieza.CABALLO_NEGRO.value:
+                puntuacion -=3
+            elif i.value == Pieza.TORRE_BLANCO.value:
+                puntuacion +=5
+            elif i.value == Pieza.TORRE_NEGRO.value:
+                puntuacion -=5
+            elif i.value == Pieza.REINA_BLANCO.value:
+                puntuacion +=9
+            elif i.value == Pieza.REINA_NEGRO.value:
+                puntuacion -=9
+        
+        return puntuacion    
         
