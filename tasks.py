@@ -22,3 +22,14 @@ def check(c):
     
     print("Comprobando sintaxis")
     run("python -m py_compile tracker/*.py")
+
+    
+@task
+def test(c):
+   '''
+   Task encargada de realizar los tests 
+   
+   Encargado de correr pytest sobre el proyecto 
+   '''
+   print("Realizando tests")
+   run("pytest")
