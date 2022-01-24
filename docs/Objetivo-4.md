@@ -60,3 +60,21 @@ devuelve la excepción esperada.
 Respecto a la inicialización del Tablero de ajedrez a una posición inicial, he de mencionar que no es necesario. A-Tracker no es un juego de ajedrez, obtiene información
 de las partidas de ajedrez, pero en ningún momento necesita implementar un tablero desde el inicio o los diferentes movimientos de las piezas, solo una representación
 de las mismas. Es por esto que los tableros de prueba se crean en el archivo de tests, dado que simulamos una situación realista.
+
+
+## Principios F.I.R.S.T
+
+Se trata de los principios que se deben de seguir a la hora de crear pruebas unitarias.
+
+- (F)ast: Las pruebas realizadas deben ser rápidas.
+- (I)ndependent : Las pruebas deben ser independientes unas de otras y de su contexto.
+- (R)epeatable : Repetibles, pudiendo ser lanzadas cuantas veces sean necesarias.
+- (S)elf validating : Auto-Evaluación, es decir, la propia prueba determina el exito o el fracaso de la misma, no necesita una interpretación externa.
+- (T)horought/(T)imely : Los tests deben de tener en cuenta las diferentes situaciones posibles / Los tests deben de ser creados antes que el código que van a testear, el código viene dado por los propios tests.
+
+En nuestro proyecto se ha seguido los principios:
+- Se tratan de unos tests rápidos, no tienen una gran carga computacional, también es debido a la escala del proyecto (apenas 0,1s).
+- Ninguno de los tests requiere que otro test devuelva un resultado en concreto, son completamente independientes unos de otros, por lo que se podrían correr individualmente.
+- Son repetibles ya que no dependen en ningún momento de factores externos como podría ser la máquina donde se este lanzando, una base de datos... Solo dependen de la propia clase (Tablero en este caso) que estan testando.
+- En ningún momento es necesario una validación por parte de nadie para saber si el test ha pasado o ha fallado. Es el propio test el que determina esta situación, por lo que se cumple la "Auto-evaluación".
+- Por último, los tests tienen en cuenta todos los posibles estados a la hora de crear los objetos que se estan testeando, además de que dicho código se ha creado posteriormente a los tests. Dichos tests vienen determinados por la [HU01](https://github.com/xCyal/A-Tracker/issues/3) de la cual hemos obtenido los tests o necesidades que debe cumplir el código que se implemente posteriormente, como en este caso el diseño de la clase o su método de puntuación.
