@@ -38,3 +38,19 @@ Para el correcto funcionamiento de este objetivo debes de tener instaladas las d
 Una vez se ha instalado las dependencias podemos proceder a utilizar el siguiente comando para checkear la sintaxis de los archivos .py de nuestro proyecto:
 
 - 'inv check'
+
+# Documentación Objetivo 4
+
+Puedes encontrar más información del objetivo 3 en la [documentación asociada](/docs/Objetivo-4.md)
+
+Para el correcto funcionamiento de este objetivo debes de tener instaladas las dependencias, para ello utilizamos el gestor de dependencias (Poetry) desde el directorio del proyecto:
+
+- 'poetry install'
+
+Después para acceder al entorno creado por poetry:
+
+- 'poetry shell'
+
+Podemos lanzar los tests con nuestro gestor de tareas:
+
+- 'inv test'
