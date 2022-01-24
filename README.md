@@ -41,7 +41,7 @@ Una vez se ha instalado las dependencias podemos proceder a utilizar el siguient
 
 # Documentación Objetivo 4
 
-Puedes encontrar más información del objetivo 3 en la [documentación asociada](/docs/Objetivo-4.md)
+Puedes encontrar más información del objetivo 4 en la [documentación asociada](/docs/Objetivo-4.md)
 
 Para el correcto funcionamiento de este objetivo debes de tener instaladas las dependencias, para ello utilizamos el gestor de dependencias (Poetry) desde el directorio del proyecto:
 
