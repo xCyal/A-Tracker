@@ -1,5 +1,48 @@
 # Información sobre el Objetivo 4
 
+## Test Runner : Pytest
+
+Se ha realizado una busqueda para obtener información sobre la actualidad de Test Runners en python.
+
+He encontrado resultados principalmente de Pytest, Unittest, Robot, Nose2 y Ward.
+
+De entre ellos, mi elección se ha visto enfocada a dos de ellos, Pytest y Unittest, debido a que son
+los más extendidos en la comunidad de python y con mejores reseñas.
+
+- Unittest viene por defecto con python, lo cual es un punto a favor, evitando dependencias.
+- Ambos permiten el uso de bibliotecas de aserciones externas.
+- Pytest puede correr tests de unittest, pero no al revés.
+- La salida de errores es mejor en pytest, permitiendo code snippet y remarcando los lugares donde se encuentra el fallo.
+- Pytest (con el uso de pytest-html) permite dar reportes en HTML, lo cual podría ser útil posteriormente.
+- El más extendido en la comunidad y por tanto la recomendación generalizada es Pytest, contando con una mayor comunidad y actividad en su desarrollo.
+
+
+Mi elección se ha visto influenciada por los motivos mencionados previamente, pero es necesario mencionar que el motivo con mayor peso es el hecho de que sea
+el recomendado y más extendido en la propia comunidad de Python, lo que da cierta seguridad ya que usuarios más experimentados avalan su uso.
+Obviamente este no es el único motivo, ya que estamos hablando de un Test Runner y en este caso la salida tras realizar los tests me parece también
+un plus a favor de Pytest. En general Unittest puede ser una opción viable, pero por lo previamente mencionado he elegido Pytest.
+
+## Biblioteca de aserciones: Assertpy
+
+Se ha realizado una búsqueda para obtener información sobre la actualidad de bibliotecas de aserciones en python.
+
+He encuntrado resultados principalmente de [Grappa](https://grappa.readthedocs.io/en/latest/), [Verify](https://github.com/dgilland/verify), [Assertpy](https://assertpy.github.io/docs.html) y [Unittest](https://docs.python.org/3/library/unittest.html) (como biblioteca de aserciones)
+
+De entre ellas, mi elección se ha decantado entre Grappa y Assertpy, descartando el resto pues estas dos me parecen tener la sintaxis más sencilla, además de una popularidad bastante amplia.
+
+- Assertpy y Grappa tienen ambas una sintaxis que se acerca mucho al lenguaje natural. En este caso, mi preferencia personal es la sintaxis de Assertpy.
+- De entre las dos, la más recomendada por la comunidad es Assertpy, siendo esta además la más extendida.
+- Assertpy es recomendada por el Test Runner elegido para este proyecto (Pytest)
+- Grappa permite mostrar el código en caso de error, pero en este caso, esto ya podemos hacerlo con Pytest.
+- Grappa permite lanzar excepciones.
+- El proyecto de Assertpy está mucho más desarrollado, Grappa esta todavía en una etapa temprana de desarrollo.
+- Assertpy ofrece un mayor rango de aserciones, lo cual probablemente no sea importante en este proyecto, pero si a una mayor escala.
+
+En general, existen varias opciones válidas, pero a mi criterio personal uno de los motivos más importantes a la hora de elegir la biblioteca de aserciones,
+es la sintaxis de la misma. Por esto mi decisión se decanto por Assertpy, ya que a preferencia personal tiene una sintaxis más amigable. Además, algunas razones
+para elegir Grappa como sería el mostrar el código ya la obtenemos de nuestro Test Runner. Por esto y por el hecho de que Assertpy es la más extendida y por tanto 
+la recomendación de la comunidad, así como de la otra herramienta añadida en este objetivo (Pytest), he optado por la opción segura y más establecida, Assertpy.
+
 ## Sobre los tests de la clase Tablero
 
 La clase Tablero será la encargada de almacenar la información de un punto exacto de una partida de ajedrez,
