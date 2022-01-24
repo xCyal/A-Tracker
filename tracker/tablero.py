@@ -6,7 +6,7 @@ class Tablero:
     
     Atributos
     ---------
-    _posiciones : list[pieza]
+    _posiciones : list[Pieza]
         Variable que almacena hasta MAX_PIEZAS piezas que representan el tablero en una situación concreta
     MAX_PIEZAS : int
     	Variable de clase que indica el maximo de piezas que puede almacenar un tablero.
@@ -21,14 +21,14 @@ class Tablero:
         
         Atributos
         ---------
-        posicion_tablero: list[pieza]
+        posicion_tablero: list[Pieza]
              Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene.
         '''
         if  len(posicion_tablero) != Tablero.MAX_PIEZAS:
             raise ValueError("El tamaño del tablero debe ser exactamente 64 casillas")
         
         for i in posicion_tablero:
-            if not isinstance(i,pieza):
+            if not isinstance(i,Pieza):
                 raise ValueError("Los valores introducidos deben ser del tipo pieza")
         
         self._posiciones = posicion_tablero
