@@ -4,7 +4,9 @@
 
 Se ha realizado una busqueda para obtener información sobre la actualidad de Test Runners en python.
 
-He encontrado resultados principalmente de Pytest, Unittest, Robot, Nose2 y Ward.
+Los criterios de búsqueda han sido el lenguaje (Python), su popularidad, sintaxis de las funciones y salida devuelta.
+
+He encontrado resultados principalmente de [Pytest](https://docs.pytest.org/en/6.2.x/), [Unittest](https://docs.python.org/3/library/unittest.html), [Robot](https://robotframework.org/), [Nose2](https://docs.nose2.io/en/latest/) y [Ward](https://ward.readthedocs.io/en/latest/).
 
 De entre ellos, mi elección se ha visto enfocada a dos de ellos, Pytest y Unittest, debido a que son
 los más extendidos en la comunidad de python y con mejores reseñas.
@@ -25,6 +27,8 @@ un plus a favor de Pytest. En general Unittest puede ser una opción viable, per
 ## Biblioteca de aserciones: Assertpy
 
 Se ha realizado una búsqueda para obtener información sobre la actualidad de bibliotecas de aserciones en python.
+
+Los criterios de búsqueda han sido el lenguaje (Python), su popularidad, sintaxis de las aserciones y salida devuelta.
 
 He encuntrado resultados principalmente de [Grappa](https://grappa.readthedocs.io/en/latest/), [Verify](https://github.com/dgilland/verify), [Assertpy](https://assertpy.github.io/docs.html) y [Unittest](https://docs.python.org/3/library/unittest.html) (como biblioteca de aserciones)
 
