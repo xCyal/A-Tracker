@@ -60,7 +60,7 @@ class Tablero:
         '''
         puntuacion = 0
         
-        for i in self_posiciones:
+        for i in self._posiciones:
             if i.value == Pieza.PEON_BLANCO.value:
                 puntuacion +=1
             elif i.value == Pieza.PEON_NEGRO.value:
