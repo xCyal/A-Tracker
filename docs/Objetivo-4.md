@@ -8,29 +8,9 @@ Los criterios de búsqueda han sido el lenguaje (Python), su popularidad, sintax
 
 He encontrado resultados principalmente de [Pytest](https://docs.pytest.org/en/6.2.x/), [Robot](https://robotframework.org/), [Nose2](https://docs.nose2.io/en/latest/) y [Ward](https://ward.readthedocs.io/en/latest/).
 
-Voy a mencionar algunas características que han influenciado el descarte de alguno de los mencionados:
 
-- Nose2:
-  - La salida no es muy descriptiva
-  - El proyecto no se actualiza con tanta frecuencia como Pytest (menor comunidad, su propia página web te recomienda el uso de Pytest).
+Para este proyecto he utilizado Pytest. Desde un punto de vista personal he decidido usarlo, después de haber probado los otros aquí mencionados, ya que la forma de crear los tests es bastante sencilla en comparación con otros como Robot. Además, es completamente cierto el hecho de que la salida de Pytest me parece la mejor de los que he probado, en este caso solo siendo comparable la de Ward, que también me pareció clara y sencilla de entender. En el aspecto de la salida, Nose2 era el que menos me ha gustado, a esto le sumamos el hecho de que es un proyecto que tiene poca actividad en su desarrollo, por lo que he decidido no continuar utilizandolo. Mi decisión final de descartar Ward, dado que para este proyecto tiene las funcionalidades necesarias y cumple con las expectativas (sintaxis sencilla, una muy buena salida, funcionalidades similares a Pytest), es principalmente el hecho de que Pytest esta avalado por una amplia cantidad de usuarios de Python, cuya experiencia hay que tener en cuenta, siendo este el más extendido en la comunidad y el que mejor valoración tiene. Desde mi punto de vista Ward es un proyecto a la altura de Pytest, ya que en muchos sentidos son similares, pero todavía le falta algo de visibilidad.
 
-- Robot:
-  - Sintaxis más compleja.
-  - Buena comunidad, aunque no es la recomendación general
-  - Requiere librerías externas 
-  
-- Ward:
-  - Salida clara y descriptiva
-  - Buen ritmo de desarrollo
-  - Funcionalidades similares a pytest (Fixtures, parametrización de tests, uso de decoradores...)
-  - Comunidad pequeña, Pytest es el indiscutible estandar.
-
-Mi elección se ha visto influenciada por los motivos mencionados previamente, pero es necesario mencionar que el motivo con mayor peso es el hecho de que sea
-el recomendado y más extendido en la propia comunidad de Python, lo que da cierta seguridad ya que usuarios más experimentados avalan su uso.
-Obviamente este no es el único motivo, ya que estamos hablando de un Test Runner y en este caso la salida tras realizar los tests me parece también
-un plus a favor de Pytest.
-
-Por todo esto el Test Runner utilizado ha sido: Pytest.
 
 ## Biblioteca de aserciones: Assertpy
 
