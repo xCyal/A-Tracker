@@ -30,6 +30,7 @@ el recomendado y más extendido en la propia comunidad de Python, lo que da cier
 Obviamente este no es el único motivo, ya que estamos hablando de un Test Runner y en este caso la salida tras realizar los tests me parece también
 un plus a favor de Pytest.
 
+Por todo esto el Test Runner utilizado ha sido: Pytest.
 
 ## Biblioteca de aserciones: Assertpy
 
