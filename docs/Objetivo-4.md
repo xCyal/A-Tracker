@@ -6,28 +6,30 @@ Se ha realizado una busqueda para obtener información sobre la actualidad de Te
 
 Los criterios de búsqueda han sido el lenguaje (Python), su popularidad, sintaxis de las funciones y salida devuelta.
 
-He encontrado resultados principalmente de [Pytest](https://docs.pytest.org/en/6.2.x/), [Unittest](https://docs.python.org/3/library/unittest.html), [Robot](https://robotframework.org/), [Nose2](https://docs.nose2.io/en/latest/) y [Ward](https://ward.readthedocs.io/en/latest/).
+He encontrado resultados principalmente de [Pytest](https://docs.pytest.org/en/6.2.x/), [Robot](https://robotframework.org/), [Nose2](https://docs.nose2.io/en/latest/) y [Ward](https://ward.readthedocs.io/en/latest/).
 
-De entre ellos, mi elección se ha visto enfocada a dos de ellos, Pytest y Unittest, debido a que son
-los más extendidos en la comunidad de python y con mejores reseñas.
+Voy a mencionar algunas características que han influenciado el descarte de alguno de los mencionados:
 
+- Nose2:
+  - La salida no es muy descriptiva
+  - El proyecto no se actualiza con tanta frecuencia como Pytest (menor comunidad, su propia página web te recomienda el uso de Pytest).
 
-- Unittest viene por defecto con python, lo cual es un punto a favor, evitando dependencias.
-- Ambos permiten el uso de bibliotecas de aserciones externas.
-- Pytest puede correr tests de unittest, pero no al revés.
-- La salida de errores es mejor en pytest, permitiendo code snippet y remarcando los lugares donde se encuentra el fallo.
-- Pytest (con el uso de pytest-html) permite dar reportes en HTML, lo cual podría ser útil posteriormente.
-- El más extendido en la comunidad y por tanto la recomendación generalizada es Pytest, contando con una mayor comunidad y actividad en su desarrollo.
-
-
+- Robot:
+  - Sintaxis más compleja.
+  - Buena comunidad, aunque no es la recomendación general
+  - Requiere librerías externas 
+  
+- Ward:
+  - Salida clara y descriptiva
+  - Buen ritmo de desarrollo
+  - Funcionalidades similares a pytest (Fixtures, parametrización de tests, uso de decoradores...)
+  - Comunidad pequeña, Pytest es el indiscutible estandar.
 
 Mi elección se ha visto influenciada por los motivos mencionados previamente, pero es necesario mencionar que el motivo con mayor peso es el hecho de que sea
 el recomendado y más extendido en la propia comunidad de Python, lo que da cierta seguridad ya que usuarios más experimentados avalan su uso.
 Obviamente este no es el único motivo, ya que estamos hablando de un Test Runner y en este caso la salida tras realizar los tests me parece también
-un plus a favor de Pytest. En general Unittest puede ser una opción viable, pero por lo previamente mencionado he elegido Pytest.
+un plus a favor de Pytest.
 
-
-Hay que mencionar que Unittest no es un Test Runner como tal, si no más bien una biblioteca de aserciones, la cual tambíen nos permite crear clases que deriven de unittest.TestCase para utilizarla como un Test Framework. El título indicando "Test Runner: Pytest" es porque **Pytest sí es un test runner**, y el hecho de haber barajado Unittest es porque podríamos haber usado Unittest evitando así dependencias, y usar las aserciones dadas por el propio Unittest, lo cual no deja de ser una opción factible para aquellos que no quieran incluir más dependencias en su proyecto.
 
 ## Biblioteca de aserciones: Assertpy
 
