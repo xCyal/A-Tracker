@@ -2,7 +2,7 @@
 
 ## Test Runner : Pytest
 
-Se ha realizado una busqueda para obtener información sobre la actualidad de Test Runners en python.
+Se ha realizado una busqueda para obtener información sobre la actualidad de Test Runners/Test Frameworks en python.
 
 Los criterios de búsqueda han sido el lenguaje (Python), su popularidad, sintaxis de las funciones y salida devuelta.
 
@@ -10,6 +10,7 @@ He encontrado resultados principalmente de [Pytest](https://docs.pytest.org/en/6
 
 De entre ellos, mi elección se ha visto enfocada a dos de ellos, Pytest y Unittest, debido a que son
 los más extendidos en la comunidad de python y con mejores reseñas.
+
 
 - Unittest viene por defecto con python, lo cual es un punto a favor, evitando dependencias.
 - Ambos permiten el uso de bibliotecas de aserciones externas.
@@ -19,10 +20,14 @@ los más extendidos en la comunidad de python y con mejores reseñas.
 - El más extendido en la comunidad y por tanto la recomendación generalizada es Pytest, contando con una mayor comunidad y actividad en su desarrollo.
 
 
+
 Mi elección se ha visto influenciada por los motivos mencionados previamente, pero es necesario mencionar que el motivo con mayor peso es el hecho de que sea
 el recomendado y más extendido en la propia comunidad de Python, lo que da cierta seguridad ya que usuarios más experimentados avalan su uso.
 Obviamente este no es el único motivo, ya que estamos hablando de un Test Runner y en este caso la salida tras realizar los tests me parece también
 un plus a favor de Pytest. En general Unittest puede ser una opción viable, pero por lo previamente mencionado he elegido Pytest.
+
+
+Hay que mencionar que Unittest no es un Test Runner como tal, si no más bien una biblioteca de aserciones, la cual tambíen nos permite crear clases que deriven de unittest.TestCase para utilizarla como un Test Framework. El título indicando "Test Runner: Pytest" es porque **Pytest sí es un test runner**, y el hecho de haber barajado Unittest es porque podríamos haber usado Unittest evitando así dependencias, y usar las aserciones dadas por el propio Unittest, lo cual no deja de ser una opción factible para aquellos que no quieran incluir más dependencias en su proyecto.
 
 ## Biblioteca de aserciones: Assertpy
 
