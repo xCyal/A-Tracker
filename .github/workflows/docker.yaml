@@ -49,5 +49,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: xcyal/tracker:lastest
+          tags: xcyal/tracker
           labels: ${{ steps.meta.outputs.labels }}
