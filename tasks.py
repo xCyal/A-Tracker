@@ -33,3 +33,10 @@ def test(c):
    '''
    print("Realizando tests")
    run("pytest")
+
+@task
+def dbuild(c):
+	"""
+	Task encargada de construir el contenedor a partir de el repositorio del proyecto
+	"""
+	run("docker build --tag xcyal/tracker .")
