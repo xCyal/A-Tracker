@@ -43,3 +43,13 @@ Vamos a hablar de el tamaño de dichas imagenes trás ser utilizadas como base d
 | python:3.8 (base)| 939 MB  |  ✔️            | 46.736s                |
 | python:3.8-slim  | 176 MB  |  ✔️            | 33.301s                |
 | python:3.8-alpine| 196 MB  |  ✔️            | 45.222s                |
+
+## Elección de la imagen base
+
+Se ha elegido python:3.8-slim.
+
+Como podemos observar en la tabla, todas las imagenes probadas han pasado los tests, la diferencia principal es que el tamaño de slim junto a su tiempo de construcción han sido los más pequeños, cumpliendo uno de los criterios de elección mencionados.
+
+La versión de alpine no me acaba de convencer, dado que por lo que he leido sobre ella, además de no tener una ganancia respecto a slim en los tests que he realizado, tiene bastantes problemas asociados, y dependiendo de lo que vayas a necesitar en el contenedor, tanto el tamaño como su tiempo de construcción pueden ser bastante mayores. A esto se suma la posibilidad de encontrar futuros problemas de estabilidad por algunos problemas de compatibilidad.
+
+La versión base me parece también una opción válida, pero en este caso la slim tiene todo lo que necesito y además es bastante más pequeña, es una diferencia bastante significativa, por lo tanto, como se refleja en el Dockerfile, el contenedor de pruebas tendrá python:3.8-slim como imagen base.
