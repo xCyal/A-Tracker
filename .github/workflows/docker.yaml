@@ -42,7 +42,9 @@ jobs:
       - name: Extraer metadatos
         id: meta
         uses: docker/metadata-action@v3
-
+        with:
+          images: xcyal/tracker
+            
       - name: Construccion y push de imagen
         uses: docker/build-push-action@v2
         with:
