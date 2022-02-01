@@ -10,7 +10,6 @@ on:
       - .github/workflows/docker.yaml
     branches:
       - main
-      - Objetivo-*-Ex
 
   pull_request:
     paths:
