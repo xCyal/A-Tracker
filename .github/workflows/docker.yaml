@@ -6,18 +6,22 @@ on:
       - pyproject.toml
       - poetry.lock
       - Dockerfile
+      - tasks.py
       - .github/workflows/docker.yaml
     branches:
       - main
+      - Objetivo-*-Ex
 
   pull_request:
     paths:
       - pyproject.toml
       - poetry.lock
       - Dockerfile
+      - tasks.py
       - .github/workflows/docker.yaml
     branches:
       - main
+      - Objetivo-*-Ex
 
 jobs:
 
