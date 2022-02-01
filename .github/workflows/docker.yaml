@@ -42,12 +42,12 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: xcyal/tracker
+          images: xcyal/a-tracker
             
       - name: Construccion y push de imagen
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: xcyal/tracker
+          tags: xcyal/a-tracker
           labels: ${{ steps.meta.outputs.labels }}
