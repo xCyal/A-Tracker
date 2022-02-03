@@ -31,6 +31,8 @@ Puedes encontrar más información del objetivo 2 en la [documentacion asociada]
 
 Puedes encontrar más información del objetivo 3 en la [documentación asociada](/docs/Objetivo-3.md)
 
+Para instalar poetry podemos encontrar las instrucciones en su [documentación](https://python-poetry.org/docs/)
+
 Para el correcto funcionamiento de este objetivo debes de tener instaladas las dependencias, para ello utilizamos el gestor de dependencias (Poetry) desde el directorio del proyecto:
 
 - 'poetry install'
