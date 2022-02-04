@@ -1,6 +1,4 @@
 stages:
-  rules:
-    - if:'$CI_PIPELINE_SOURCE == "push"'
   - test
   - build
 
