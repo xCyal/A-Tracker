@@ -11,5 +11,6 @@ Para realizar los tests primero opte por hacerlos sobre las versiones mencionada
 
 Después de investigar el error, pude observar que era problema de que la versión no era soportada por las versiones específicas de algunas herramientas utilizadas (en este caso pytest).
 
+![Fail python 3.7](/docs/img/python37fail.png)
 
 Por lo tanto, se va a lanzar los tests en 3.8, 3.9 y 3.10.
