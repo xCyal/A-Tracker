@@ -31,9 +31,11 @@ jobs:
         with:
           python-version: ${{matrix.vector-versiones}}
 
-      - name: Instalar poetry y dependencias
+      - name: 'Descargar e instalar poetry'
         run: 
-          pip install poetry
+          pip install poetry  
+      - name: 'Resolver dependencias'
+        run:
           poetry install
       - name: Lanzar tests
         run: 'poetry run invoke test'
