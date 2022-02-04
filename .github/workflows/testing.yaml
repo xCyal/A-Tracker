@@ -36,4 +36,4 @@ jobs:
           pip install poetry
           poetry install
       - name: Lanzar tests
-        run: 'poetry run inv test'
+        run: 'poetry run invoke test'
