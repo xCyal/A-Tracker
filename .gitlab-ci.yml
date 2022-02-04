@@ -1,9 +1,11 @@
 stages:
   - test
 
-test:
+image:
+  name: xcyal/a-tracker
+  entrypoint: [""]
+
+test-running:
   stage: test
-  image:
-    name: xcyal/a-tracker
   script:
     - invoke test
