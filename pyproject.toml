@@ -5,7 +5,7 @@ description = "Proyecto A-Tracker de la asignatura IV"
 authors = ["xCyal <manuvilla4@correo.ugr.es>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8 <=3.10"
 
 [tool.poetry.dev-dependencies]
 invoke = "^1.6.0"
