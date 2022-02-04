@@ -2,25 +2,12 @@ name: Build and push test container to Docker Hub
 
 on:
   push:
-    paths:
-      - pyproject.toml
-      - poetry.lock
-      - Dockerfile
-      - tasks.py
-      - .github/workflows/docker.yaml
     branches:
       - main
 
   pull_request:
-    paths:
-      - pyproject.toml
-      - poetry.lock
-      - Dockerfile
-      - tasks.py
-      - .github/workflows/docker.yaml
     branches:
       - main
-      - Objetivo-*-Ex
 
 jobs:
 
