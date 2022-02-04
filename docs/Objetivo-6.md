@@ -14,3 +14,15 @@ Después de investigar el error, pude observar que era problema de que la versi�
 ![Fail python 3.7](/docs/img/python37fail.png)
 
 Por lo tanto, se va a lanzar los tests en 3.8, 3.9 y 3.10.
+
+
+## Criterios de elección de plataforma CI
+
+Vamos a establecer los criterios que se han utilizado para comparar las diferentes opciones existentes:
+
+- Dificultad de integrar la plataforma con nuestro repositorio en GitHub
+- Dificultad a la hora de configurarlo
+- Que sea gratuito, o al menos tenga una versión gratuita durante un tiempo
+- No requerir información adicional (Tarjetas de crédito, por ejemplo) para verificar el usuario (Mención especial a GitLab CI)
+- Posibilidad de uso de "Matrix" para lanzar los tests sobre varias versiones diferentes
+
