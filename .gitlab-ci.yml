@@ -6,6 +6,8 @@ image:
   entrypoint: [""]
 
 test-running:
+  rules:
+    - if:'$CI_PIPELINE_SOURCE == "push"'
   stage: test
   script:
     - invoke test
