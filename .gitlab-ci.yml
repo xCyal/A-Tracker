@@ -1,6 +1,6 @@
 stages:
   - test
-  - build
+
 
 image:
   name: xcyal/a-tracker
