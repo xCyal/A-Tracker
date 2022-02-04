@@ -1,13 +1,13 @@
 stages:
   - test
+  - build
 
-image:
+build-image:
+  stage: build
   name: xcyal/a-tracker
   entrypoint: [""]
 
 test-running:
-  rules:
-    - if:'$CI_PIPELINE_SOURCE == "push"'
   stage: test
   script:
     - invoke test
