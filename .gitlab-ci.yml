@@ -2,10 +2,8 @@ stages:
   - test
   - build
 
-build-image:
-  stage: build
+image:
   name: xcyal/a-tracker
-  entrypoint: [""]
 
 test-running:
   stage: test
