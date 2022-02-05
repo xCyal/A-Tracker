@@ -17,7 +17,7 @@ jobs:
     
     strategy:
       matrix:
-        vector-versiones: ['3.8','3.9','3.10']
+        vector-versiones: ['3.9','3.10']
 
     name: 'Test: ${{matrix.vector-versiones}}'
     
