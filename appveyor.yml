@@ -1,0 +1,12 @@
+image: Ubuntu
+
+branches:
+   only:
+      - Objetivo-*
+
+services:
+  - docker
+
+build: off
+test_script:
+  - docker run -t -v $(pwd):/app/test xcyal/a-tracker
