@@ -6,3 +6,5 @@ automatizar:
    orden: inv
 
 test: tests/tablero_test.py
+
+CI: appveyor.yml
