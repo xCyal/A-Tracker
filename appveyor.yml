@@ -8,5 +8,6 @@ services:
 
 
 build: off
-running_tests:
+
+test_script:
   - docker run -t -v $(pwd):/app/test xcyal/a-tracker
