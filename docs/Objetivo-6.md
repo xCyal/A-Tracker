@@ -64,3 +64,38 @@ La configuración suele ser similar, cambiando algo la sintaxis de cada platafor
 Teniendo en cuenta lo mencionado previamente, he optado por AppVeyor y GitHub Actions. GitHub Actions me parece la opción natural, siendo de la propia plataforma de GitHub, y completamente gratuita y rápida, no he tenido muchas dudas al seleccionarla. Respecto a la segunda opción, he tenido bastantes problemas para elegirla, hasta que finalmente, encontré una plataforma no muy conocida (al menos, no mencionada en muchos sitios como el resto), AppVeyor, que me parece una maravilla, en comparación con las otras. Como he dicho su integración y configuración no varian mucho del resto, pero **no requiere ningún tipo de información bancaria y es completamente gratis**. 
 
 Quizás alguno de los problemas que podemos encontrar aquí sea el hecho de que no permite lanzar trabajos en paralelo, por lo que si decidimos lanzar aquí varios tests, tardará algo más. Por eso, he decidido que esta plataforma se encargue de lanzar el contenedor de Docker con la versión en la que se realizó el proyecto (3.8), dejando así la versión 3.9 y 3.10 a GitHub Actions, de esta forma no estaremos testeando dos veces una misma versión, como se pide en la lista de comprobación.
+
+## Sobre la configuración de appveyor
+
+Appveyor por defecto, cuando sincronizas la plataforma con GitHub, tiene configurados dos tests por defecto, uno para el PR y otro para cada branch, que tan solo se encargan de construir el respositorio para comprobar su funcionamiento. 
+
+Voy a explicar brevemente como funciona appveyor dado que su uso no parece estar muy extendido.
+
+Para cambiar el funcionamiento de esto necesitamos configurar [appveyor.yml](../appveyor.yml) de la siguiente forma:
+
+Para evitar lanzar los tests dos veces, eliminamos el test por branch y dejamos solo el del PR:
+
+```yml
+skip_branch_with_pr : true 
+```
+
+Como he mencionado, por defecto va a construir el proyecto, en este caso vamos a desactivarlo para que no lo haga:
+
+```yml
+build: off
+```
+
+Luego se debe especificar los servicios que vamos a utilizar, en este caso docker:
+
+```yml
+services:
+  - docker
+````
+
+Ahora, existe una directiva específica para indicar que ordenes queremos lanzar en el script de los tests:
+
+```yml
+test_script:
+   - docker run -t -v $(pwd):/app/test xcyal/a-tracker
+```
+La forma de actuar, al no tener la imagen del contenedor en el servidor local, será la de descargar la imagen desde nuestro Docker Hub y lanzar los tests dentro, dando continuidad al objetivo 5. 
