@@ -24,7 +24,7 @@ Vamos a establecer los criterios que se han utilizado para comparar las diferent
 - Dificultad a la hora de configurarlo
 - Que sea gratuito, o al menos tenga una versión gratuita durante un tiempo
 - Posibilidad de uso de "Matrix" para lanzar los tests sobre varias versiones diferentes
-- No requerir información adicional (Tarjetas de crédito, por ejemplo) para verificar el usuario (Mención especial a GitLab CI)
+- No requerir información adicional (Tarjetas de crédito, por ejemplo) para verificar el usuario (Mención especial a la mayoría de plataformas)
 
 ## Elección de la plataforma CI
 
@@ -36,10 +36,31 @@ Se trata de la opción más lógica, pues es la propia de la plataforma donde es
 
 Es uno de los seleccionados para este proyecto, ya que me parece una opción realmente buena.
 
-### GitLab CI
+### [GitLab CI](https://docs.gitlab.com/ee/ci/)
 
 Una buena opción a priori, fácil de integrar con GitHub mediante un "personal token" generado en GitHub que da acceso a GitLab CI sobre nuestro repositorio. La configuración bastante sencilla, similar en muchos aspectos a GitHub Actions. Lo he descartado completamente, cuando realizando los tests, con la configuración bien hecha, daba un error de "usuario no verificado". Tras investigar algo más sobre este error, resulta que requiere la confirmación de la identidad por una Tarjeta de crédito para su uso, por lo que lo he descartado y he añadido este como un criterio para la elección de las plataformas (inesperadamente, no es equivalente a un pago pero prefiero no hacerlo).
 
-### Circle CI
+### [Circle CI](https://circleci.com/)
 
 De las mejores opciones para lo que busco. Se trata de una plataforma fácil de integrar, con una simple "deploy key", configurable con un .yaml de sintaxis nada complicada. Tiene un tier gratis que permite además lanzar test en paralelo, durante 6000 minutos mensuales. No necesita ninguna información adicional para su uso. Se le menciona únicamente por ser una de las plataformas testeadas, y probablemente de elección segura, de no ser por que la mayoría de los compañeros ya la han utilizado.
+
+## [Travis CI](https://www.travis-ci.com/)
+
+Buena integración con Github, solo hay que logear en ambas y dar permisos en GitHub a TravisCI. Configuración similar al resto, bastante sencilla, con travis.yml. Es gratuito para proyectos open source, seleccionando el Trial mensual. Esta no he llegado a configurarla ya que cae en el mismo error que GitLab, pidiendo datos bancarios.
+
+## [Appveyor](https://www.appveyor.com/)
+
+Después de un buen tiempo buscando una plataforma que cumpla de nuevo todos los requisitos, he encontrado (no se menciona en muchos sitios) AppVeyor. Integración muy sencilla, dando permisos como una aplicacion externa en github sobre los repositorios que deseemos. Configuración similar al resto, con un .yml, con una [sintaxis](https://www.appveyor.com/docs/appveyor-yml/) fácil de entender. No permite lanzar trabajos en paralelo. Es completamente gratis, y (por fin) no requiere ningún dato bancario para su uso.
+
+
+## Decisión final y conclusiones
+
+Después de haber probado más de 10 plataformas diferentes, la mayoría han sido descartadas directamente al pasarlas por el filtro de "gratis" y "no requerir información bancaria". He plasmado aquí algunas por mencionarlas, pero hay muchas más que o bien tienen un tier gratuito muy limitado, o los requisitos para acceder a este tier no se adaptan a lo que buscaba.
+
+Respecto a la forma de integrarse con GitHub, la gran mayoría utilizan o un una deploy key, o se añaden a GitHub como una aplicación externa, por lo que esto no varía demasiado.
+
+La configuración suele ser similar, cambiando algo la sintaxis de cada plataforma, pero todas se manejan con un único archivo .yml, y realmente no hay diferencias tan grandes.
+
+Teniendo en cuenta lo mencionado previamente, he optado por AppVeyor y GitHub Actions. GitHub Actions me parece la opción natural, siendo de la propia plataforma de GitHub, y completamente gratuita y rápida, no he tenido muchas dudas al seleccionarla. Respecto a la segunda opción, he tenido bastantes problemas para elegirla, hasta que finalmente, encontré una plataforma no muy conocida (al menos, no mencionada en muchos sitios como el resto), AppVeyor, que me parece una maravilla, en comparación con las otras. Como he dicho su integración y configuración no varian mucho del resto, pero **no requiere ningún tipo de información bancaria y es completamente gratis**. 
+
+Quizás alguno de los problemas que podemos encontrar aquí sea el hecho de que no permite lanzar trabajos en paralelo, por lo que si decidimos lanzar aquí varios tests, tardará algo más. Por eso, he decidido que esta plataforma se encargue de lanzar el contenedor de Docker con la versión en la que se realizó el proyecto (3.8), dejando así la versión 3.9 y 3.10 a GitHub Actions, de esta forma no estaremos testeando dos veces una misma versión, como se pide en la lista de comprobación.
