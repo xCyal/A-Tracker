@@ -1,9 +1,5 @@
 image: Ubuntu
 
-branches:
-   only:
-      - Objetivo-*
-
 services:
   - docker
 
