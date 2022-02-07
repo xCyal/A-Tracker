@@ -1,4 +1,20 @@
-# Elección de task runner:
+# Task Runner
+
+## Criterios de elección
+
+Vamos a establecer los criterios de elección del task runner de este proyecto sobre los que valoraremos las diferentes opciones disponibles:
+
+- Menor número de dependencias adicionales.
+
+- Lenguaje del Task Runner, preferiblemente python por simplicidad.
+
+- Dificultad de ponerlo en marcha, si necesita configuración adicional.
+
+- Forma de manejar el Task Runner, si es en un solo archivo o es algo más complejo.
+
+- Recomendación de la comunidad, aunque no es fácil de evaluar, pero en caso de duda puede ser determinante.
+
+
 ## Invoke
 
 Invoke es un "task execution tool & library", es decir, un software escrito en python que nos permite automatizar tareas sobre nuestros proyectos. Para ello utiliza un archivo llamado tasks.py sobre el cual se escriben las funciones deseadas (en el caso de este proyecto la función check, encargada de comprobar que el código de tracker compila), para más tarde poder invocar dichas funciones mediante el comando : - inv -funcion-
