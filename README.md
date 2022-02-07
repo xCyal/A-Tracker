@@ -70,3 +70,13 @@ y después lanzar los tests dentro de el con:
 - 'inv drun'
 
 La otra opción es acceder al contenedor [aquí](https://hub.docker.com/repository/docker/xcyal/tracker).
+
+# Documentación Objetivo 6
+
+Puedes encontrar más información del objetivo 6 en la [documentación asociada](/docs/Objetivo-6.md)
+
+Se han añadido un total de 3 tests, cada uno sobre las diferentes versiones de python elegidas para el proyecto.
+
+Dos de ellos se lanzan con GitHub Actions, y otro con Appveyor desde el contenedor de pruebas del objetivo pasado (con versión 3.8).
+
+Para comprobar el funcionamiento completo solo es necesario revisar los tests que se han lanzado sobre este PR del objetivo 6.
