@@ -38,9 +38,9 @@ class Tablero:
         '''
         Getter del atributo _posiciones de la clase tablero
         
-        Devuelve _posiciones
+        Devuelve _posicion_unica
         '''
-        print("Getter de _posiciones en tablero.py")
+        print("Getter de _posicion_unica en tablero.py")
         return self._posicion_unica        
             
 
