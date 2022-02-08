@@ -27,3 +27,16 @@ Puedes encontrar más información sobre el proyecto en [/docs](/docs).
 
 Puedes encontrar más información del objetivo 2 en la [documentacion asociada](/docs/Objetivo-2.md)
 
+# Documentación Objetivo 3
+
+Puedes encontrar más información del objetivo 3 en la [documentación asociada](/docs/Objetivo-3.md)
+
+Para instalar poetry podemos encontrar las instrucciones en su [documentación](https://python-poetry.org/docs/)
+
+Para el correcto funcionamiento de este objetivo debes de tener instaladas las dependencias, para ello utilizamos el gestor de dependencias (Poetry) desde el directorio del proyecto:
+
+- 'poetry install'
+
+Una vez se ha instalado las dependencias podemos proceder a utilizar el siguiente comando para checkear la sintaxis de los archivos .py de nuestro proyecto:
+
+- 'inv check'
