@@ -1,4 +1,5 @@
 from pieza import *
+from tipo_pieza import *
 
 class Tablero:
     '''
@@ -6,7 +7,7 @@ class Tablero:
     
     Atributos
     ---------
-    _posiciones : list[Pieza]
+    _posicion_unica : list[]
         Variable que almacena hasta MAX_PIEZAS piezas que representan el tablero en una situación concreta
     MAX_PIEZAS : int
     	Variable de clase que indica el maximo de piezas que puede almacenar un tablero.
@@ -31,17 +32,17 @@ class Tablero:
             if not isinstance(i,Pieza):
                 raise ValueError("Los valores introducidos deben ser del tipo pieza")
         
-        self._posiciones = posicion_tablero
+        self._posicion_unica = posicion_tablero
         
     @property
-    def posiciones(self):
+    def posicion_unica(self):
         '''
         Getter del atributo _posiciones de la clase tablero
         
         Devuelve _posiciones
         '''
         print("Getter de _posiciones en tablero.py")
-        return self._posiciones       
+        return self._posicion_unica        
             
 
 
@@ -60,7 +61,7 @@ class Tablero:
         '''
         puntuacion = 0
         
-        for i in self._posiciones:
+        for i in self._posicion_unica:
             if i.value == Pieza.PEON_BLANCO.value:
                 puntuacion +=1
             elif i.value == Pieza.PEON_NEGRO.value:
