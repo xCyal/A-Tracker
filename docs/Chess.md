@@ -49,6 +49,8 @@ Otra posible aproximación, sería representar todas las piezas, y el color al q
 
 Es por esto que la representación final, se va a realizar con una clase Pieza. Dicha clase, tendrá dos atributos que representarán dicha pieza, el color, 0 negro o 1 blanco, y el tipo de pieza.
 
+Por lo tanto los atributos de dicha clase serán _tipo_, que requiere del uso de un enum que se creará con los diferentes tipos de piezas (TipoPieza), y _blanco_ que determinará el color, siendo True si la pieza es blanca, y False si es negra.
+
 
 
 
