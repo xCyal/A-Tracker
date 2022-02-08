@@ -5,11 +5,14 @@ sys.path.append("./tracker")
 import pytest
 from assertpy import assert_that
 
+from tracker.tipo_pieza import *
 from tracker.pieza import *
 from tracker.tablero import *
 
-piezas_validas = [Pieza.PEON_NEGRO] * 64   
-piezas_invalidas = [Pieza.EMPTY] * 63
+peon_negro = Pieza(TipoPieza.PEON,False)
+
+piezas_validas = [peon_negro] * 64   
+piezas_invalidas = [peon_negro] * 63
 
 tablero_valido = Tablero(piezas_validas)
 
@@ -25,13 +28,13 @@ def test_tablero_valido_longitud():
     '''
     Test encargado de comprobar que el constructor crea los objetos correctamente, en este caso comprobando su longitud
     '''
-    assert_that(tablero_valido.posiciones).is_length(64)
+    assert_that(tablero_valido.posicion_unica).is_length(64)
 
 def test_tablero_valido_tipo():
     '''
     Test encargado de comprobar que el constructor crea los objetos correctamente, en este caso comprobando su tipo
     '''
-    assert_that(tablero_valido.posiciones).contains_only(Pieza.PEON_NEGRO)
+    assert_that(tablero_valido.posicion_unica).contains_only(peon_negro)
 
 def test_puntuacion_tablero():
     '''
