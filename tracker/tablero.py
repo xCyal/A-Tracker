@@ -8,7 +8,7 @@ class Tablero:
     Atributos
     ---------
     _posicion_unica : list[]
-        Variable que almacena hasta MAX_PIEZAS piezas que representan el tablero en una situación concreta
+        Variable que almacena hasta MAX_PIEZAS piezas que representan el tablero en una situación concreta o un 0 para indicar que estan vacias.
     MAX_PIEZAS : int
     	Variable de clase que indica el maximo de piezas que puede almacenar un tablero.
     '''
@@ -17,20 +17,19 @@ class Tablero:
     def __init__(self, posicion_tablero):
         
         '''
-        Constructor de la clase tablero, inicializa el tablero solo si hay 64 casillas, en caso contrario lo 
-        deja vacío.
+        Constructor de la clase tablero, inicializa el tablero solo si hay 64 casillas. Las casillas deben contener una pieza o un 0 para indicar que estan vacias
         
         Atributos
         ---------
-        posicion_tablero: list[Pieza]
-             Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene.
+        posicion_tablero: list[]
+             Argumento que proporciona una lista de 64 casillas para el tablero con la pieza que contiene o un 0 en caso de estar vacia.
         '''
         if  len(posicion_tablero) != Tablero.MAX_PIEZAS:
             raise ValueError("El tamaño del tablero debe ser exactamente 64 casillas")
         
         for i in posicion_tablero:
-            if not isinstance(i,Pieza):
-                raise ValueError("Los valores introducidos deben ser del tipo pieza")
+            if not (isinstance(i,Pieza) or i == 0):
+                raise ValueError("Los valores introducidos deben ser del tipo pieza o 0 para una casilla vacía")
         
         self._posicion_unica = posicion_tablero
         
