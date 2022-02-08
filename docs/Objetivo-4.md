@@ -35,19 +35,13 @@ es la sintaxis de la misma. Por esto mi decisión se decanto por Assertpy, ya qu
 para elegir Grappa como sería el mostrar el código ya la obtenemos de nuestro Test Runner. Por esto y por el hecho de que Assertpy es la más extendida y por tanto 
 la recomendación de la comunidad, así como de la otra herramienta añadida en este objetivo (Pytest), he optado por la opción segura y más establecida, Assertpy.
 
-## Sobre los tests de la clase Tablero
+## Sobre los tests de la clase Tablero y Pieza
 
-La clase Tablero será la encargada de almacenar la información de un punto exacto de una partida de ajedrez,
-con la idea de que se concatenen numerosos tableros para así obtener la partida completa. 
+La clase Tablero será la encargada de almacenar la información de un punto exacto de una partida de ajedrez.
 
-Teniendo esta idea de base, los tests se obtienen de las propias historias de usuario [HU01](https://github.com/xCyal/A-Tracker/issues/3).
-En esta historia se observa un usuario que después de jugar varias partidas, quiere comprobar los errores cometidos.
-Para ello debemos establecer un sistema de puntuación de una situación concreta de la partida para así poder observar donde se han cometido errores.
-Esta sería la base de un futuro analisis más profundo. De aquí surge el [issue asociado](https://github.com/xCyal/A-Tracker/issues/26).
-Una vez tenemos parte de la lógica de negocio implementada, es hora de comprobar el correcto funcionamiento de la clase Tablero encargada de estas funcionalidades.
-Para ello hemos creado 4 tests diferentes, uno encargado de comprobar que el método de puntuación funciona correctamente, dos para ver sí un Tablero que supuestamente
-debería inicializarse bien (longitud 64, tipo Pieza) da el resultado esperado, y un último para en caso en el que comprobamos si un Tablero que no debería de inicializarse
-devuelve la excepción esperada.
+La clase Pieza será la encargada de representar las piezas dentro de este tablero.
+
+Los tests que se han desarrollado se encargan de comprobar que los objetos de las clases Pieza y Tablero se crean correctamente, así como en caso de introducir parámetros indeseados, lanzan las excepciones correspondientes. Estos tests se extraen de los issues [#45](https://github.com/xCyal/A-Tracker/issues/45) y [#29](https://github.com/xCyal/A-Tracker/issues/45)
 
 Respecto a la inicialización del Tablero de ajedrez a una posición inicial, he de mencionar que no es necesario. A-Tracker no es un juego de ajedrez, obtiene información
 de las partidas de ajedrez, pero en ningún momento necesita implementar un tablero desde el inicio o los diferentes movimientos de las piezas, solo una representación
