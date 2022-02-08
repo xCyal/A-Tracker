@@ -11,9 +11,9 @@ Lo que  como desarrolladores podemos deducir de dicha historia, son tres issues 
 
 Para poder realizar dicha valoración, tenemos que ser capaces de representar la jugada. Para ello determinamos que los elementos que componen el ajedrez son:
 
-- El tablero, el espacio sobre el que se colocan las piezas.
+- El tablero, el espacio sobre el que se colocan las piezas. ([Issue #17](https://github.com/xCyal/A-Tracker/issues/17))
 
-- Las piezas, blancas y negras, peones, caballos, alfiles, torres, reyes y damas.
+- Las piezas, blancas y negras, peones, caballos, alfiles, torres, reyes y damas. ([Issue #44](https://github.com/xCyal/A-Tracker/issues/44))
 
 Estos dos problemas, se pueden abordar de diferentes maneras. Podemos aproximarnos desde un punto de vista "Piece centric", o uno "Square centric".
 
