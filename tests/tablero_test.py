@@ -9,12 +9,32 @@ from tracker.tipo_pieza import *
 from tracker.pieza import *
 from tracker.tablero import *
 
+
 peon_negro = Pieza(TipoPieza.PEON,False)
 
 piezas_validas = [peon_negro] * 64   
 piezas_invalidas = [peon_negro] * 63
 
 tablero_valido = Tablero(piezas_validas)
+
+def test_pieza_invalida():
+    '''
+    Test que el constructor de Pieza genera una excepcion si el tipo es invalido
+    '''
+    with pytest.raises(ValueError):
+        Pieza("Peon",True)
+
+def test_pieza_valida_tipo():
+    '''
+    Test encargado de comprobar que el constructor de pieza crea los objetos correctamente, en este caso comprobando su tipo
+    '''
+    assert_that(peon_negro.tipo).is_equal_to(TipoPieza.PEON)
+
+def test_pieza_valida_blanco():
+    '''
+    Test encargado de comprobar que el constructor de pieza crea los objetos correctamente, en este caso comprobando su atributo "blanco"
+    '''
+    assert_that(peon_negro.blanco).is_equal_to(False)
 
 def test_tablero_invalido():
     '''
