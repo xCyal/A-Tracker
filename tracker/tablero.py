@@ -44,7 +44,6 @@ class Tablero:
         return self._posicion_unica        
             
 
-
     def puntuacion_tablero(self):
         '''
         Metodo que devuelve la puntuacion, a nivel de material, del tablero.
@@ -60,27 +59,15 @@ class Tablero:
         '''
         puntuacion = 0
         
+        valor = {TipoPieza.PEON : 1,TipoPieza.ALFIL : 3, TipoPieza.CABALLO : 3, TipoPieza.TORRE : 5, TipoPieza.DAMA : 9, TipoPieza.REY : 0}
+        
         for i in self._posicion_unica:
-            if i.value == Pieza.PEON_BLANCO.value:
-                puntuacion +=1
-            elif i.value == Pieza.PEON_NEGRO.value:
-                puntuacion -=1
-            elif i.value == Pieza.ALFIL_BLANCO.value:
-                puntuacion +=3
-            elif i.value == Pieza.ALFIL_NEGRO.value:
-                puntuacion -=3
-            elif i.value == Pieza.CABALLO_BLANCO.value:
-                puntuacion +=3
-            elif i.value == Pieza.CABALLO_NEGRO.value:
-                puntuacion -=3
-            elif i.value == Pieza.TORRE_BLANCO.value:
-                puntuacion +=5
-            elif i.value == Pieza.TORRE_NEGRO.value:
-                puntuacion -=5
-            elif i.value == Pieza.REINA_BLANCO.value:
-                puntuacion +=9
-            elif i.value == Pieza.REINA_NEGRO.value:
-                puntuacion -=9
+            if i != 0:
+                if i.blanco:
+                    puntuacion += valor[i.tipo]
+                else:
+                    puntuacion -= valor[i.tipo]
+                
         
         return puntuacion    
         
