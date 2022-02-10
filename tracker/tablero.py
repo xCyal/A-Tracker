@@ -43,7 +43,7 @@ class Tablero:
         print("Getter de _posicion_unica en tablero.py")
         return self._posicion_unica        
             
-
+        
     def puntuacion_tablero(self):
         '''
         Metodo que devuelve la puntuacion, a nivel de material, del tablero.
@@ -68,6 +68,7 @@ class Tablero:
                 else:
                     puntuacion -= valor[i.tipo]
                 
-        
+
         return puntuacion    
+
         

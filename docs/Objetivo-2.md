@@ -1,10 +1,7 @@
 # Documentación objetivo 2
 
-Se ha creado la clase tablero y el enum pieza, ambas enfocadas al desarrollo de la [HU01](https://github.com/xCyal/A-Tracker/issues/3).
-En esta historia de usuario se habla de un usuario, no profesional que desea conocer sus errores frecuentes a la hora de jugar al ajedrez.
-De esta historia de usuario podemos obtener el issue central de este objetivo, el issue [#16](https://github.com/xCyal/A-Tracker/issues/16).
+En la [HU01](https://github.com/xCyal/A-Tracker/issues/3), un usuario, habla de que le gustaría tener la posibilidad de obtener una valoración sobre un movimiento que ha realizado, para saber si es bueno o malo, a partir de como se encuentran las piezas en un momento dado. Si subdividimos esta historia, llegamos al a conclusión de que necesitamos una forma de almacenar una posición de las piezas, es decir, un tablero Issue [#16](https://github.com/xCyal/A-Tracker/issues/16). 
 
-El issue [#16](https://github.com/xCyal/A-Tracker/issues/16) nos plantea el problema de diseñar una clase que pueda determinar la posición de un tablero de ajedrez en un momento dado,
-para más tarde poder utilizar esta clase a la hora de llevar el seguimiento de una partida, sobre la que se realizará el analisis y por lo tanto la busqueda de errores de nuestro usuario en [#16](https://github.com/xCyal/A-Tracker/issues/16).
+Adicionalmente, necesitamos una forma de deducir si esta posición, se trata de una posición favorable o desfavorable, ya que es lo que el usuario necesita. De esta situación, surge el issue [#26](https://github.com/xCyal/A-Tracker/issues/26), donde se aplica [la teoría del valor relativo de las piezas](https://es.wikipedia.org/wiki/Valor_relativo_de_las_piezas_de_ajedrez), para deducir, de forma básica, si se encuentra en una posición ventajosa para blancas, para negras, o en un empate de material.
 
-Respecto a la forma de desarrollarlo, hemos creado un enum que nos permita determinar que tipo de pieza se encuentra en una casilla en concreto, para más tarde en la clase tablero, crear las casillas (64) y que se determine la posición en las que estan.
+Es de estos dos issues, [#26](https://github.com/xCyal/A-Tracker/issues/26) y [#16](https://github.com/xCyal/A-Tracker/issues/16), de donde se extrae la clase tablero, y la funcionalidad asociada de obtener una puntuación sobre esta clase.
