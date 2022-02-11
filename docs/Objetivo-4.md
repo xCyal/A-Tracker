@@ -28,7 +28,7 @@ De entre ellas, mi elección se ha decantado entre Grappa y Assertpy, descartand
 
 - Assertpy y Grappa tienen ambas una sintaxis que se acerca mucho al lenguaje natural. En este caso, mi preferencia personal es la sintaxis de Assertpy.
 - Grappa permite mostrar el código en caso de error, pero en este caso, esto ya podemos hacerlo con Pytest.
-- Grappa permite lanzar excepciones.
+- Grappa tiene aserciones sobre si una función lanza excepciones.
 - Assertpy ofrece un mayor rango de aserciones, lo cual probablemente no sea importante en este proyecto, pero si a una mayor escala.
 - De entre las dos, la más recomendada por la comunidad es Assertpy, siendo esta además la más extendida.
 - Assertpy es recomendada por el Test Runner elegido para este proyecto (Pytest)
