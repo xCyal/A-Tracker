@@ -33,3 +33,21 @@ def test(c):
    '''
    print("Realizando tests")
    run("pytest")
+
+@task
+def dbuild(c):
+	"""
+	Task encargada de construir el contenedor a partir de el repositorio del proyecto
+	
+	Lanza Docker para crear el contenedor "xcyal/tracker"
+	"""
+	run("docker build --tag xcyal/tracker .")
+	
+@task
+def drun(c):
+	"""
+	Task encargada de lanzar los tests unitarios dentro del contenedor de pruebas
+	
+	Lanza Docker con el contenedor previamente creado para lanzar los tests unitarios
+	"""
+	run("docker run -t -v `pwd`:/app/test xcyal/tracker")

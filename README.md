@@ -56,3 +56,19 @@ Después para acceder al entorno creado por poetry:
 Podemos lanzar los tests con nuestro gestor de tareas:
 
 - 'inv test'
+
+# Documentación Objetivo 5
+
+Puedes encontrar más información del objetivo 5 en la [documentación asociada](/docs/Objetivo-5.md)
+
+Existen dos opciones para lanzar los tests en el contenedor de pruebas:
+
+Crear el contenedor con:
+
+- 'inv dbuild'
+
+y después lanzar los tests dentro de el con:
+
+- 'inv drun'
+
+La otra opción es acceder al contenedor [aquí](https://hub.docker.com/repository/docker/xcyal/tracker).
